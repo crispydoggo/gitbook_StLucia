@@ -1,0 +1,48 @@
+"0","source(""radar.R"", local = knitr::knit_global())"
+"2","Registered S3 methods overwritten by 'dbplyr':
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+"
+"2","[37m── [1mAttaching packages[22m ─────────────────[39m
+"
+"2","[37m[32m✓[37m [34mggplot2[37m 3.3.5     [32m✓[37m [34mpurrr  [37m 0.3.4
+[32m✓[37m [34mtibble [37m 3.1.6     [32m✓[37m [34mdplyr  [37m 1.0.8
+[32m✓[37m [34mtidyr  [37m 1.2.0     [32m✓[37m [34mstringr[37m 1.4.0
+[32m✓[37m [34mreadr  [37m 2.1.2     [32m✓[37m [34mforcats[37m 0.5.1[39m
+"
+"2","[37m── [1mConflicts[22m ──────────────────────────
+[31mx[37m [34mdplyr[37m::[32mfilter()[37m masks [34mstats[37m::filter()
+[31mx[37m [34mdplyr[37m::[32mlag()[37m    masks [34mstats[37m::lag()[39m
+"
+"2","XLConnect 1.0.5 by Mirai Solutions GmbH [aut],
+  Martin Studer [cre],
+  The Apache Software Foundation [ctb, cph] (Apache POI),
+  Graph Builder [ctb, cph] (Curvesapi Java library),
+  Brett Woolridge [ctb, cph] (SparseBitSet Java library)
+"
+"2","https://mirai-solutions.ch
+https://github.com/miraisolutions/xlconnect
+"
+"2","
+Attaching package: ‘scales’
+
+"
+"2","The following object is masked from ‘package:purrr’:
+
+    discard
+
+"
+"2","The following object is masked from ‘package:readr’:
+
+    col_factor
+
+"
+"2","Registering fonts with R
+"
+"0","data <- filter(radar, country == ""Jamaica"")"
+"0",""
+"0","# To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot"
+"0","  "
+"0","data <- rbind(rep(100,4) , rep(0,4) , select(data, -country, -order))"
+"0",""
